@@ -18,12 +18,12 @@
   <title>About</title>
 </svelte:head>
 
-<div class="content">
-  <h1>SITAJAKHALA DUGDHA UTPADAK SAMABAI SAMITI LTD</h1>
-  <h1>1958 (Regd. No.67/58-59, Amlighat)</h1>
-  <h1>Amlighat, Dist:-Morigaon, Assam, 782410</h1>
+<div class="m-8">
+  <h1 class="text-center font-bold">SITAJAKHALA DUGDHA UTPADAK SAMABAI SAMITI LTD</h1>
+  <h1 class="text-center font-bold">1958 (Regd. No.67/58-59, Amlighat)</h1>
+  <h1 class="text-center font-bold">Amlighat, Dist:-Morigaon, Assam, 782410</h1>
 
-  <section>
+  <section class="mx-8 md:mx-16 my-8">
     <b>How and why the Society was formed ?</b>
     <p>
       During the period of establishment it was viewed that the Production of
@@ -35,7 +35,7 @@
     </p>
   </section>
 
-  <section>
+  <section class="mx-8 md:mx-16 my-8">
     <b>Business Activities</b>
     <p>
       Procurement and sell of raw milk, pasteurized cow milk Procurement,
@@ -43,7 +43,7 @@
       Provide free vaccination facility and etc
     </p>
   </section>
-  <section>
+  <section class="mx-8 md:mx-16 my-8">
     <b>Social welfare Activities </b>
     <p>
       Organizes various training and seminar for the benefit of members as well
@@ -53,17 +53,9 @@
       improvement of sports, Culture and other Such social Institutions
     </p>
   </section>
-  <section>
+  <section class="mx-8 md:mx-16 my-8">
     <b>Production of raw milk</b>
     <p>Around 18,000 to 20,000 liters a day</p>
   </section>
 </div>
-
-<style>
-  .content {
-    width: 100%;
-    max-width: var(--column-width);
-    margin: var(--column-margin-top) auto 0 auto;
-  }
-</style>
 

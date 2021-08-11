@@ -1,34 +1,38 @@
 <script lang="ts">
-  import Logo from '../header/sitajakhala_logo.png';
+  import Logo from '../assets/sitajakhala_logo.png';
   import FooterList from './FooterList.svelte';
 </script>
 
-<footer class="flex items-start flex-col md:flex-row">
-  <div class="md:flex-1">
+<footer class="flex justify-around items-start flex-col md:flex-row p-16">
+  <div class="my-4 md:my-2 w-full md:w-1/4">
     <img alt="SJ-logo" src={Logo} />
     <div>
       An indigenous brand of Assam with pasteurized milk and its products.
     </div>
   </div>
 
-  <div class="md:flex-1">
+  <div class="w-full md:w-1/4">
     <FooterList
       title="SITEMAP"
       entries={[
-        ['TENDER', '/tenders'],
+        ['TENDERS', '/tenders'],
         ['CONTACT', '/contact'],
         ['ABOUT', '/about']
       ]}
     />
   </div>
 
-  <div class="md:flex-1">
-    <p>FOLLOW US</p>
-    <ul>
-      <li>Facebook</li>
-      <li>Twitter</li>
-      <li>Instagram</li>
-    </ul>
+  <hr class="md:hidden my-4" />
+
+  <div class="w-full md:w-1/4">
+    <FooterList
+      title="FOLLOW US"
+      entries={[
+        ['FACEBOOK', '/facebook'],
+        ['TWITTER', '/twitter'],
+        ['INSTAGRAM', '/instagram']
+      ]}
+    />
   </div>
 </footer>
 

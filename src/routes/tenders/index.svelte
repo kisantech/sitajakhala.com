@@ -20,6 +20,11 @@
   }
 </script>
 
+
+<svelte:head>
+  <title>Tenders - Sitajakhala</title>
+</svelte:head>
+
 <p class="text-blue-500 text-center">All Tenders and Notices</p>
 <h1 class="text-6xl text-yellow-400 text-center mb-4">Tenders</h1>
 

@@ -6,6 +6,10 @@
   const paras = tender.description.split('\n');
 </script>
 
+<svelte:head>
+  <title>Tender - {tender.title} - Sitajakhala</title>
+</svelte:head>
+
 <div class="px-4 md:p-16">
   <div class="px-4">
     <a href="/tenders" class="text-gray-500 hover:text-blue-500"

@@ -20,14 +20,29 @@
 
     const obj = { name, email, message };
 
-    // TODO: fetch
-    setTimeout(() => {
-      alert('submitted');
-      console.log(obj);
-      loading = false;
-    }, 3000);
+    if (name.length > 0 || email.length > 0 || message.length > 0) {
+      fetch('https://api.sitajakhala.com/sitajakhala_com_contact', {
+        method: 'POST',
+        body: JSON.stringify(obj),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+        .then((_) => {
+          alert('Thank you for your response!');
+        })
+        .catch((err) => {
+          alert(err.message + ' | Please try again');
+        });
+    } else {
+      alert("Name, Email, Message boxes shouldn't be empty");
+    }
   }
 </script>
+
+<svelte:head>
+  <title>Contact Sitajakhala</title>
+</svelte:head>
 
 <div
   class="my-4 md:my-16 p-4 md:p-16 flex flex-col justify-center"

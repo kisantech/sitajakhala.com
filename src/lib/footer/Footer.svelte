@@ -28,9 +28,9 @@
     <FooterList
       title="FOLLOW US"
       entries={[
-        ['FACEBOOK', '/facebook'],
-        ['TWITTER', '/twitter'],
-        ['INSTAGRAM', '/instagram']
+        ['FACEBOOK', '#'],
+        ['TWITTER', 'https://twitter.com/sitajakhala?s=08'],
+        ['INSTAGRAM', 'https://www.instagram.com/invites/contact/?i=fuodym3j0g9u&utm_content=mbwz4q9']
       ]}
     />
   </div>

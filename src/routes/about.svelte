@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-  <title>About</title>
+  <title>About Sitajakhala</title>
 </svelte:head>
 
 <div class="m-8">

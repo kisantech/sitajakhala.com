@@ -20,15 +20,14 @@
   }
 </script>
 
-
 <svelte:head>
   <title>Tenders - Sitajakhala</title>
 </svelte:head>
 
-<p class="text-blue-500 text-center">All Tenders and Notices</p>
-<h1 class="text-6xl text-yellow-400 text-center mb-4">Tenders</h1>
+<p class="mt-8 text-blue-500 text-center">All Tenders and Notices</p>
+<h1 class="text-3xl md:text-6xl text-yellow-400 text-center mb-4">Tenders</h1>
 
-<div class="flex justify-center">
+<div class="flex justify-center p-8">
   <input
     type="search"
     bind:this={searchEle}
@@ -56,7 +55,7 @@
         <p class="text-gray-600">
           {tender.description.slice(0, 150)}
           ...
-          <a 
+          <a
             class="hover:text-blue-600 italic text-blue-500"
             href={`/tenders/${i}`}
           >
@@ -66,7 +65,7 @@
         {#if tender?.link?.length > 0}
           <p class="p-4">
             <a
-              target="_blank"
+              download
               class="transition duration-500 p-2 px-8 bg-blue-400 text-white hover:bg-blue-500 active:bg-blue-600"
               style="border-radius: 10px;"
               href={tender.link}

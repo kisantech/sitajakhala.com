@@ -56,7 +56,7 @@
     >
       {#each pages as p}
         <li class:active={$page.path === p[1]} class="p-2">
-          <a sveltekit:prefetch href={p[1]}>{p[0]}</a>
+          <a on:click={onClick} sveltekit:prefetch href={p[1]}>{p[0]}</a>
         </li>
         <hr />
       {/each}

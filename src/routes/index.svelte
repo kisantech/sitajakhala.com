@@ -44,7 +44,7 @@
   style="background: #f1faff; box-shadow: 0px -7px 60px 20px #f1faff;"
 >
   <p class="my-2 text-blue-500 text-center text-lg">Our Products</p>
-  <h1 class="my-2 text-5xl text-yellow-400 text-center">
+  <h1 class="my-2 text-3xl md:text-6xl text-yellow-400 text-center">
     Real Food, Real Good
   </h1>
   <p class="my-2 text-center text-gray-500">
@@ -87,7 +87,7 @@
 
 <section class="my-4 md:my-32 p-4 md:p-16 flex flex-col justify-center">
   <p class="my-2 text-blue-500 text-center text-lg">Notification</p>
-  <h1 class="my-2 text-5xl text-yellow-400 text-center">Tender</h1>
+  <h1 class="my-2 text-3xl md:text-6xl text-yellow-400 text-center">Tender</h1>
   <p class="my-2 text-center text-gray-500">
     Download the Tender Schedule free of cost and then submit the bids before
     its expiration.

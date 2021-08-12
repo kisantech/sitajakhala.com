@@ -52,7 +52,7 @@
     <!-- contact us -->
     <div class="flex flex-col w-full md:w-1/2 p-4">
       <p class="my-2 text-blue-500 text-center text-lg">Contact Us</p>
-      <h1 class="my-2 text-5xl text-yellow-400 text-center">Get in Touch</h1>
+      <h1 class="my-2 text-3xl md:text-6xl text-yellow-400 text-center">Get in Touch</h1>
       <form class="flex flex-col w-full" on:submit={onSubmit}>
         <input
           disabled={loading}
@@ -107,20 +107,20 @@
   <ul class="flex flex-col text-center md:flex-row my-8 justify-around w-full">
     <li class="w-full md:w-1/4">
       <a href="tel:+919435064783" class="flex flex-col items-center">
-        <span class="text-yellow-400 w-12 my-4"><PhoneIcon /></span>
+        <span class="text-yellow-400 w-10 my-4"><PhoneIcon /></span>
         <span>PHONE</span>
         <span class="text-gray-500">+ (91) 9435064783</span>
       </a>
     </li>
     <li class="w-full md:w-1/4">
-      <a href="/" class="flex flex-col items-center">
-        <span class="text-yellow-400 w-12 my-4"><TelegramIcon /></span>
+      <a href="mailto:support@sitajakhala.com" class="flex flex-col items-center">
+        <span class="text-yellow-400 w-10 my-4"><TelegramIcon /></span>
         <span>E-MAIL</span>
         <span class="text-gray-500">contact@sitajakhala.com</span>
       </a>
     </li>
     <li class="w-full md:w-1/4">
-      <a href="/" class="flex flex-col items-center">
+      <a href="https://goo.gl/maps/FRnhzuqBVsYLQUjM6" class="flex flex-col items-center">
         <span class="text-yellow-400 w-12 my-4"><LocationIcon /></span>
         <span>ADDRESS</span>
         <span class="text-gray-500">

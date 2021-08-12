@@ -1,6 +1,8 @@
 <script lang="ts">
   import Logo from '../assets/sitajakhala_logo.png';
   import FooterList from './FooterList.svelte';
+
+  import socialMedias from '../social-media.json';
 </script>
 
 <footer class="flex justify-around items-start flex-col md:flex-row p-16">
@@ -27,11 +29,7 @@
   <div class="w-full md:w-1/4">
     <FooterList
       title="FOLLOW US"
-      entries={[
-        ['FACEBOOK', '#'],
-        ['TWITTER', 'https://twitter.com/sitajakhala?s=08'],
-        ['INSTAGRAM', 'https://www.instagram.com/invites/contact/?i=fuodym3j0g9u&utm_content=mbwz4q9']
-      ]}
+      entries={socialMedias.map((m) => [m.name.toUpperCase(), m.link])}
     />
   </div>
 </footer>

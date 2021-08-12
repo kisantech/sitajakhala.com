@@ -11,6 +11,7 @@
   import Contact from './contact.svelte';
 
   import tenders from './tenders/tender.json';
+  import socialMedias from '$lib/social-media.json';
 </script>
 
 <svelte:head>
@@ -30,6 +31,18 @@
       <a href="/about">
         <Button>Read more</Button>
       </a>
+      <p class="flex w-1/2 justify-start h-10 my-2">
+        {#each socialMedias as socialMedia}
+          <a
+            href={socialMedia.link}
+            style="color:{socialMedia.color}"
+            class="w-8 h-8 p-1 hover:shadow-lg rounded-full"
+            target="__blank"
+          >
+            <svelte:component this={socialMedia.icon} />
+          </a>
+        {/each}
+      </p>
     </div>
     <div
       class="absolute md:top-0 -top-24 left-0 md:left-1/2 opacity-5 md:opacity-100 z-0 w-full md:w-1/2 h-64"
@@ -98,8 +111,9 @@
         class="m-4 p-4 w-full md:w-1/4 shadow-lg hover:shadow-xl flex flex-col rounded-2xl"
         style="border: 2px solid #F0FEFE;"
       >
-        <a class="hover:text-blue-600 font-bold text-blue-500" href={`/tenders/${i}`}
-          >{tender.title}</a
+        <a
+          class="hover:text-blue-600 font-bold text-blue-500"
+          href={`/tenders/${i}`}>{tender.title}</a
         >
         <i class="text-gray-500">{tender.date}</i>
         <p class="text-gray-600">{tender.description.slice(0, 100)}...</p>

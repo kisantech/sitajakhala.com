@@ -6,6 +6,19 @@ export interface ITender {
 }
 const tenders: ITender[] = [
   {
+    title: 'Corrigendum - THREE',
+    date: '25 August 2021',
+    description: 'Tender Notice No: IDVC/SITA/2020-21/2020-21/015',
+    link: '/CORRIGENDUM_TWO.pdf'
+  },
+  {
+    title: 'Corrigendum - TWO',
+    date: '04 April 2021',
+    description: 'Tender Notice No: IDVC/SITA/2020-21/2020-21/015',
+    link: '/CORRIGENDUM_THREE.pdf'
+  },
+
+  {
     title: 'Corrigendum',
     date: 'March 4, 2021',
     description: `Tender Notice No: NO: IDVC/SITA/2020-21/2020-21/015 DATED: 24-02-2021
